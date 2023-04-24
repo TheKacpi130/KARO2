@@ -50,7 +50,7 @@ header {
   align-items: center;
   justify-content: space-between;
   background: var(--bg-color);
-  padding: 18px 100px;
+  padding: 18px 180px;
   box-shadow: 0 0.5rem 50rem rgba(0, 0, 0, 0.1);
 }
 .logo {
@@ -96,14 +96,12 @@ header {
   margin-bottom: 2.5rem;
 }
 .home-social{
-  position: absolute;
+  padding-top: 1rem;
   display: flex;
-  bottom: 12%;
-
 }
 .home-social i {
-  margin-right: 24px;
-  font-size: 24px;
+  margin-right: 20px;
+  font-size: 28px;
   color: var(--text-color);
 }
 .home-social i:hover{
@@ -299,15 +297,15 @@ header {
   .home {
     grid-template-columns: 1fr;
   }
-  .home-social{
-    display: none;
-  }
   .about {
     grid-template-columns: 1fr;
     text-align: center;
   }
   .about-img {
     order: 2;
+  }
+  .home-social{
+    display: block;
   }
 }
 @media (max-width: 515px) {
