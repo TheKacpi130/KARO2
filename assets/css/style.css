@@ -19,6 +19,8 @@
   --second-color: #fcc465;
   --third-color: #fd6742;
   --text-color: #1e1c2a;
+  --text-color-permanent: #1e1c2a;
+  --light-color: #83d8ad;
   --bg-color: #fff;
  
   --big-font: 4rem;
@@ -214,13 +216,61 @@ header {
 .s-box h3 {
   margin: 4px 0 10px;
 }
-.contact-container{
-  width: 100%;
-  min-width: 100vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.contact h2{
+  color: var(--text-color-permanent);
+}
+.contact-content{
+  display: flex;
   align-items: center;
-  gap: 1.5rem;
+  justify-content: space-around;
+}
+.contact-form{
+  width: 360px;
+  margin-top: 4rem;
+}
+.contact-form form input,
+.contact-form form textarea{
+  width: 100%;
+  font-size: 13px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  margin-bottom: 12px;
+}
+.contact-form form input::placeholder,
+.contact-form form textarea::placeholder{
+  color: var(--text-color-permanent);
+  letter-spacing: 1px;
+}
+.contact-form form textarea{
+  resize: none;
+  height: 200px;
+}
+.contact-button{
+  max-width: 100px;
+  font-weight: 600;
+  background-color: var(--main-color);
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.contact-info{
+  max-width: 360px;
+}
+.contact-info h1{
+  color: var(--text-color-permanent);
+  font-size: 1.6rem;
+  margin: 5px 0 2px;
+}
+.contact-info i{
+  color: var(--main-color);
+  font-size: 45px;
+}
+.contact-info i:hover{
+  transform: translateY(-10px);
+  transition: 0.5s;
 }
 .footer {
   display: grid;
@@ -229,21 +279,21 @@ header {
 .footer-box h1 {
   font-size: 1.8rem;
 }
-.social_footer {
+.footer-social {
   text-align: center;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
-.social_footer i {
+.footer-social i {
   text-align: center;
   font-size: 30px;
   padding: 5px;
   color: var(--text-color);
 }
-.social_footer i:hover {
+.footer-social i:hover {
   color: var(--main-color);
 }
 .copyright {
-  padding-bottom: 1rem;
   text-align: center;
   font-size: var(--p-font);
 }
